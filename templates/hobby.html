@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title%}Hobbies{% endblock %}
+{% block content%}
+<div class="hero">
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src = "static/images/hobby_background.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <h3>My Hobbies</h3>
+        <h4><b>Detective novels</b></h4>
+        <div class="row">
+          <figure>
+            <img src="static/images/book_1.jpg">
+            <figcaption>
+              <h5>The Turn of the Key</h5>
+              <p>One of the most intriguing detective novels that I have seen so far as it tells the story through letters written by a nanny who claims she did not commit the murder of a child. </p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="static/images/book_2.jpg">
+            <figcaption>
+              <h5>Journey Under the Midnight Sun</h5>
+              <p>Keigo Higashino was my favorite mystery novel writer who always ends his books with an unexpected twist that made me lost count in time.</p>
+            </figcaption>
+          </figure>
+          <figure>
+              <img src="static/images/book_3.jpg">
+              <figcaption>
+              <h5>The Surgeon</h5>
+              <p>The Surgeon was the first book I've read from Tess Gerritsen as her intricate descriptions of the murder completely drew me into the crime scenes. </p>
+              </figcaption>
+          </figure>
+        </div>
+    </div>
+</div>
+<div class="break"></div>
+<div class="hero">
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src = "static/images/hobby_background2.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <h4><b>Anime</b></h4>
+        <div class="row">
+          <figure>
+            <img src="static/images/fullmetal.jpg">
+            <figcaption>
+              <h5>Full Metal Alchemist</h5>
+              <p>My all time favorite anime that explores themes revolving around human nature as we follow the journey of two brothers in search of recovering their lost body parts after practicing forbidden alchemy.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="static/images/nana.jpg">
+            <figcaption>
+              <h5>Nana</h5>
+              <p>An unique romance anime that left a deep impression on my mind as two woman named Nana struggles to pursue their dreams and maintain their relationships. </p>
+            </figcaption>
+          </figure>
+          <figure>
+              <img src="static/images/haikyu.jpg">
+              <figcaption>
+              <h5>Haikyu!!</h5>
+              <p>As a big fan of sports anime, Haikyu is one of my favorite sports anime as it highlights the importance of teamwork and personal growth with striking visuals that aroused my interest in volleyball.</p>
+              </figcaption>
+          </figure>
+        </div>
+    </div>
+</div>
+<div class="space">
+    <div class="low_buttons">
+        <a href="/project" class="button back">Back</a>
+        <a href="/contact" class="button next">Next</a>
+    </div>
+</div>
+{% endblock %}

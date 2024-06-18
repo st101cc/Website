@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title%}Projects{% endblock %}
+{% block content%}
+
+<div class="hero">
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src = "static/images/project_background.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <h3>My Projects</h3>
+    </div>
+    <div class="card-deck">
+        <div class="card">
+            <div class="container">
+                <img class="card-img-top" src="static/images/cafe.png" alt="Image">
+                <div class="over"></div>
+                <div class="middle">
+                    <a href="https://github.com/lse-st207/project-at2023-group5/blob/bece14a27094fb4c78df6e84ff11783f0e4473f5/Report.pdf" target="_blank" rel="noopener noreferrer"><div class="text">Click to Read More</div></a>
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><b>London Cafe Database</b></h5>
+                <p class="card-text">Created a London Cafe Database using Google Maps API to compare distribution and ratings of chain and independent coffee shops. Stored the database in MongoDB and Kinetica. </p>
+            </div>
+        </div>
+      <div class="card">
+          <div class="container">
+                <img class="card-img-top" src="static/images/reddit.png" alt="Image">
+                <div class="over"></div>
+                <div class="middle">
+                    <a href="https://github.com/st101cc/reddit/blob/0cc6bc2d1bb966b15b9610bc60e8cd409386f304/report.ipynb" target="_blank" rel="noopener noreferrer"><div class="text">Click to Read More</div></a>
+                </div>
+          </div>
+            <div class="card-body">
+                <h5 class="card-title"><b>LSE's Public Perception on Reddit</b></h5>
+                <p class="card-text">Analyzed public perception of LSE using Reddit API. Visualized findings with word cloud, bar charts, and heatmap. Discovered that the public is most interested in LSE's application process, master programs, and accomodation choices. </p>
+            </div>
+      </div>
+      <div class="card">
+          <div class="container">
+                <img class="card-img-top" src="static/images/distribution.png" alt="Image">
+                <div class="over"></div>
+                <div class="middle">
+                    <a href="https://github.com/ml24330/dss2022" target="_blank" rel="noopener noreferrer"><div class="text">Click to Read More</div></a>
+                </div>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title"><b>eBay Auction Price Prediction</b></h5>
+              <p class="card-text">Queried eBay API for listings of wall clocks and Harry Potter books and found that seller feedback is the most influential predictor. Performed classification and regression to predict whether the listing sells and how much it sells for. </p>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="space">
+    <div class="low_buttons">
+            <a href="/about" class="button back">Back</a>
+            <a href="/hobby" class="button next">Next</a>
+    </div>
+</div>
+{% endblock %}
