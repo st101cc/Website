@@ -4,53 +4,9 @@
     {
       "src": "main.py",
       "use": "@vercel/python"
-    },
-    {
-      "src": "static/css/*",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "static/images/*",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "templates/*",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
-    {
-      "src": "/static/css/(.*)",
-      "dest": "/static/css/$1"
-    },
-    {
-      "src": "/static/images/(.*)",
-      "dest": "/static/images/$1"
-    },
-    {
-      "src": "/",
-      "dest": "/templates/home.html"
-    },
-    {
-      "src": "/about",
-      "dest": "/templates/about.html"
-    },
-    {
-      "src": "/contact",
-      "dest": "/templates/contact.html"
-    },
-    {
-      "src": "/hobby",
-      "dest": "/templates/hobby.html"
-    },
-    {
-      "src": "/project",
-      "dest": "/templates/project.html"
-    },
-    {
-      "src": "/base",
-      "dest": "/templates/base.html"
-    },
     {
       "src": "/(.*)",
       "dest": "main.py"
